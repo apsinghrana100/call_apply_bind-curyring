@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let multiply=function(x,y){
+        //         console.log(x,y);
+        // }   
+
+        let multply=function(x){
+            return function(y){
+                console.log(x * y);
+            }
+        }
+
+        let multiplytwonumber=multply(3)
+        multiplytwonumber(3);
+
+        let multiplytwonumberthree=multply(2)
+        multiplytwonumberthree(5);
+         </script>
+</body>
+</html>
